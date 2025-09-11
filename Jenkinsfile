@@ -33,6 +33,11 @@ pipeline{
                 echo "Deploy the application to $TESTING_ENVIRONMENT"
             }
         }
+        stage('Tests on Staging'){
+            steps{
+                echo "Integration tests on staging with Katalon"
+            }
+        }
         stage('Deploy to Production'){
             steps{
                 echo "Deployment of the code to $PRODUCTION_ENVIRONMENT is done"

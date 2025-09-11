@@ -23,11 +23,6 @@ pipeline{
                 echo "Check the quality of the code with SonarCube"
             }
         }
-        stage('Security Scan'){
-            steps{
-                echo "Conduct security check of application with FindSecBugs"
-            }
-        }
         stage('Deploy to Staging'){
             steps{
                 echo "Deploy the application to $TESTING_ENVIRONMENT"

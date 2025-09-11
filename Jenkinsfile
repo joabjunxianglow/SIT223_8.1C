@@ -18,11 +18,6 @@ pipeline{
                 echo "Integration tests with Katalon"
             }
         }
-        stage('Code Analysis'){
-            steps{
-                echo "Check the quality of the code with SonarCube"
-            }
-        }
         stage('Security Scan'){
             steps{
                 echo "Conduct security check of application with FindSecBugs"
